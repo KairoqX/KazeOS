@@ -1,0 +1,2 @@
+usrname= "admin"   
+password = "admin"
