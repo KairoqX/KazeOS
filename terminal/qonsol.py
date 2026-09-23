@@ -23,4 +23,8 @@ def usr_commands():
             calc()
         elif(inpts == "clear"):
             clear_terminal()
-        
+        elif(inpts == 'ls'):
+            ls = os.getwd()
+            print(ls)
+
+        el

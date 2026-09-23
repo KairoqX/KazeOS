@@ -6,7 +6,7 @@ un_input = input("username: ").lower()
 pass_input = input("password: ").lower()
 
 if(un_input == usrname) and (pass_input == password):
-    print("logged in..")
+    print("logged in...")
     usr_commands()
 
 else:
