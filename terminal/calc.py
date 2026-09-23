@@ -6,14 +6,15 @@ def calc():
 
         if y == "+":
             print(x + z)
+        elif x or z == 0 and y == "/":
+            print("0")
         elif y == "-":
             print(x - z)
         elif y == "*":
             print(x * z)
         elif y == "/":
             print(x//z)
-        elif x or z == 0 and y == "/":
-            print("0")
+
             
         else:
             print("invalide")

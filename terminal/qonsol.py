@@ -1,5 +1,7 @@
 from config import usrname
 from calc import calc
+from os_detection import clear_terminal
+import os
 
 def usr_commands():
     while True:
@@ -19,5 +21,6 @@ def usr_commands():
             break
         elif(inpts == "calc"):
             calc()
-            
+        elif(inpts == "clear"):
+            clear_terminal()
         
