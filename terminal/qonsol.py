@@ -24,7 +24,7 @@ def usr_commands():
         elif(inpts == "clear"):
             clear_terminal()
         elif(inpts == 'ls'):
-            ls = os.getwd()
+            ls = os.listdir()
             print(ls)
 
-        el
+        
