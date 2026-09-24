@@ -1,6 +1,7 @@
 from config import usrname
 from calc import calc
 from os_detection import clear_terminal
+from ls_command import ls_command
 import os
 
 def usr_commands():
@@ -23,8 +24,7 @@ def usr_commands():
             calc()
         elif(inpts == "clear"):
             clear_terminal()
-        elif(inpts == 'ls'):
-            ls = os.listdir()
-            print(ls)
+        elif(inpts.startswith('ls')):
+            ls_command(inpts)
 
         
