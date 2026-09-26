@@ -1,8 +1,7 @@
 import os
-
-
-def ls_command(arg):
-
-    dirname = arg.split(" ")
+def ls_command(x):
+    dirname = x.split(" ")
     dir = dirname[1]
-    print(dir)
+
+    print(os.listdir(dir))
+
