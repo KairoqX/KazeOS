@@ -1,7 +1,7 @@
 from config import usrname
 from calc import calc
 from os_detection import clear_terminal
-from ls_command import ls_command
+from commands import ls_command, cd_command
 import os
 
 def usr_commands():
@@ -9,14 +9,7 @@ def usr_commands():
         inpts = input(f"KazeOS@{usrname}: ")
 
         if(inpts == "help"):
-            print("""
-            Available commands:
-             help
-             about
-             calc
-             clear
-             exit
-            """)
+            ...
         elif (inpts == "exit"):
             print("closing qonsole....")
             break
@@ -30,6 +23,6 @@ def usr_commands():
             ls_command(inpts)
         elif(inpts == 'pwd'):
             print(os.getcwd())
-        elif(inpts == 'cd'):
-            os.chdir()
+        elif(inpts.startswith('cd')):
+            cd_command(inpts)
         
