@@ -18,3 +18,17 @@ def cd_command(a):
             os.chdir(dir)
         except Exception:
             print("Location doesn't exist...")
+
+def mkdir(a):
+    dirname = a.split(" ")
+
+    if a == 'mkdir':
+        print("Please enter a name for the folder...")
+    else:
+        try:
+            dir = dirname[1]
+            os.makedirs(dir)
+        except FileExistsError:
+            print("Folder already exists...")
+
+            
