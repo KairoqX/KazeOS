@@ -6,7 +6,7 @@ import os
 
 def usr_commands():
     while True:
-        inpts = input(f"KairOS@{usrname}: ")
+        inpts = input(f"KazeOS@{usrname}: ")
 
         if(inpts == "help"):
             print("""
@@ -30,4 +30,6 @@ def usr_commands():
             ls_command(inpts)
         elif(inpts == 'pwd'):
             print(os.getcwd())
+        elif(inpts == 'cd'):
+            os.chdir()
         
