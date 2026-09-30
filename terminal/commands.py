@@ -40,7 +40,7 @@ def rm(a):
             dir = dirname[1]
             os.remove(dir)
             print(f"file {dir} is deleted...")
-        except FileNotFoundErro:
+        except FileNotFoundError:
             print("File doesn't exist...")
 
 def cat(a):

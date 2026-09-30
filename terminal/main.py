@@ -12,5 +12,3 @@ if(un_input == usrname) and (pass_input == password):
 else:
     print("wrong")
     
-usr_commands()
-
