@@ -1,7 +1,7 @@
 from config import usrname
 from calc import calc
 from os_detection import clear_terminal
-from commands import ls_command, cd_command, mkdir, rm
+from commands import ls_command, cd_command, mkdir, rm, cat
 import os
 
 def usr_commands():
@@ -9,7 +9,9 @@ def usr_commands():
         inpts = input(f"KazeOS@{usrname}: ")
 
         if(inpts == "help"):
-            ...
+            with open('help.txt', 'r') as f:
+                content = f.read()
+                print(content)
         elif (inpts == "exit"):
             print("closing qonsole....")
             break
@@ -29,4 +31,6 @@ def usr_commands():
             mkdir(inpts)
         elif(inpts.startswith('rm')):
             rm(inpts)
+        elif(inpts.startswith('cat')):
+            cat(inpts)
             

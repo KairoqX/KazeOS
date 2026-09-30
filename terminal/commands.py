@@ -42,3 +42,18 @@ def rm(a):
             print(f"file {dir} is deleted...")
         except FileNotFoundErro:
             print("File doesn't exist...")
+
+def cat(a):
+    dirname = a.split(" ")
+    if a == 'cat':
+        print("Enter file name...")
+    else:
+        try:
+            dir = dirname[1]
+            with open(dir) as f:
+                content = f.read()
+                print(content)
+        except FileNotFoundError:
+            print("File not found...")
+        except PermissionError:
+            print("Unabel to open 'permission denied'...")
