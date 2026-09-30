@@ -31,4 +31,14 @@ def mkdir(a):
         except FileExistsError:
             print("Folder already exists...")
 
-            
+def rm(a):
+    dirname = a.split(" ")
+    if a == 'rm':
+        print("Please provide the location of the file...")
+    else:
+        try:
+            dir = dirname[1]
+            os.remove(dir)
+            print(f"file {dir} is deleted...")
+        except FileNotFoundErro:
+            print("File doesn't exist...")

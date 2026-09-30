@@ -1,7 +1,7 @@
 from config import usrname
 from calc import calc
 from os_detection import clear_terminal
-from commands import ls_command, cd_command, mkdir
+from commands import ls_command, cd_command, mkdir, rm
 import os
 
 def usr_commands():
@@ -27,3 +27,6 @@ def usr_commands():
             cd_command(inpts)
         elif(inpts.startswith('mkdir')):
             mkdir(inpts)
+        elif(inpts.startswith('rm')):
+            rm(inpts)
+            
