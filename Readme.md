@@ -60,6 +60,7 @@ Currently supported commands include:
 * `cd`
 * `mkdir`
 * `calc`
+* `rm`
 
 ### Filesystem Operations
 
