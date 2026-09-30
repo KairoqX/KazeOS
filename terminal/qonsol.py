@@ -13,8 +13,8 @@ def usr_commands():
         elif (inpts == "exit"):
             print("closing qonsole....")
             break
-        elif(inpts == "calc"):
-            calc()
+        elif(inpts.startswith('calc')):
+            calc(inpts)
         elif(inpts == "clear"):
             clear_terminal()
         elif(inpts == 'ls'):

@@ -4,3 +4,4 @@ calc
 exit
 ls
 pwd
+mkdir
