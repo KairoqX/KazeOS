@@ -9,7 +9,7 @@ window.config(background='black')
 window.iconphoto(True,icon)
 def new_win():
     nwin = Tk()
-    window.destroy()
+    # window.destroy()
 
 Button(window, text='➕', command=new_win).pack()
 
